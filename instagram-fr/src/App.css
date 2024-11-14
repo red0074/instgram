@@ -1,0 +1,136 @@
+.app {
+  background-color: #fafafa;
+}
+
+.app__header {
+  background-color: white;
+  object-fit: contain;
+  border-bottom: 1px solid lightgray;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  gap: 5px;
+}
+.app__login,
+.app__logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.app__login span,
+.app__logout span {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* Styles for the login button */
+.login-button {
+  background-color: rgb(243, 104, 197);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.login-button span {
+  margin-right: 8px;
+}
+
+/* Hover effect */
+.login-button:hover {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: rgb(243, 104, 197);
+}
+.app__posts {
+  padding: 20px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app__header {
+    flex-direction: column;
+  }
+
+  .login-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .login-button:hover {
+    padding: 10px 15px;
+  }
+}
+.form {
+  --input-focus: #2d8cf0;
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: beige;
+  --main-color: black;
+  padding: 20px;
+  background: rgb(243, 104, 197);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+}
+
+.title {
+  color: var(--font-color);
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.title span {
+  color: var(--font-color-sub);
+  font-weight: 600;
+  font-size: 17px;
+}
+.input {
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--font-color);
+  padding: 5px 10px;
+  outline: none;
+}
+.input::placeholder {
+  color: var(--font-color-sub);
+  opacity: 0.8;
+}
+.input:focus {
+  border: 2px solid var(--input-focus);
+}
+.button-confirm:active {
+  box-shadow: 0px 0px var(--main-color);
+  transform: translate(3px, 3px);
+}
+
+.button-confirm {
+  margin: 50px auto 0 auto;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--font-color);
+  cursor: pointer;
+}
